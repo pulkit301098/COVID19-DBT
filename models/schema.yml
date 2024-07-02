@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: covidCountryData
+    description: >
+      Aggregates the total deaths, total cases, and total percentage of deaths per year and per country. By default, the values of the variables (selectISO, selectYear) are set to all so all the data will be processed and grouped by iso_code and year. You can set the variable values at runtime.
+
+  - name: highDeaths
+    description: >
+      Calculates high deaths in countries. There are 2 variables (high_threshold, selectYear). By default, for the year, all the values are taken if the variable is left as None. The high_threshold variable is set to a million deaths by default and can be changed at runtime.
+
+  - name: casesVaccineDeath
+    description: 
+      This model calculated the total deaths, total vaccines and the total cases that occurred in a year. There are 2 variables (selectISO, selectYear) that are set to none which will result in all the data being processed but these can be set at runtime to view specific data. 
